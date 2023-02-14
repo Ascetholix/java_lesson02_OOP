@@ -15,4 +15,10 @@ public abstract class Person implements GameInterface{
         prCount++;
     }
     public static int getPrCount(){return prCount;}
+
+    @Override
+    public void step() { }
+
+    @Override
+    public String getInfo() {return "";}
 }
