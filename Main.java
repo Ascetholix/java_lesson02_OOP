@@ -10,33 +10,63 @@ public class Main {
         ArrayList<Person> arrayList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             int per = rnd.nextInt(6);
-            if(per == 0){
-                Crossbowman crossbowman = new Crossbowman(getName());
-                arrayList.add(crossbowman);
-            }
-            if(per == 1){
-                Sniper sniper = new Sniper(getName());;
-                arrayList.add(sniper);
-            }
-            if(per == 2){
-                Monk monk = new Monk(getName());
-                arrayList.add(monk);
-            }
-            if(per == 3){
-                Mag mag = new Mag(getName());
-                arrayList.add(mag);
-            }
-            if(per == 4){
-                Spearman spearman = new Spearman(getName());
-                arrayList.add(spearman);
-            }
-            if(per == 5){
-                Outlaw outlaw = new Outlaw(getName());
-                arrayList.add(outlaw);
-            }
-            if(per == 6){
-                Farmer farmer = new Farmer(getName());
-                arrayList.add(farmer);
+//            if(per == 0){
+//                Crossbowman crossbowman = new Crossbowman(getName());
+//                arrayList.add(crossbowman);
+//            }
+//            if(per == 1){
+//                Sniper sniper = new Sniper(getName());;
+//                arrayList.add(sniper);
+//            }
+//            if(per == 2){
+//                Monk monk = new Monk(getName());
+//                arrayList.add(monk);
+//            }
+//            if(per == 3){
+//                Mag mag = new Mag(getName());
+//                arrayList.add(mag);
+//            }
+//            if(per == 4){
+//                Spearman spearman = new Spearman(getName());
+//                arrayList.add(spearman);
+//            }
+//            if(per == 5){
+//                Outlaw outlaw = new Outlaw(getName());
+//                arrayList.add(outlaw);
+//            }
+//            if(per == 6){
+//                Farmer farmer = new Farmer(getName());
+//                arrayList.add(farmer);
+//            }
+            switch (per){
+                case 0:
+                    Crossbowman crossbowman = new Crossbowman(getName());
+                    arrayList.add(crossbowman);
+                    break;
+                case 1:
+                    Sniper sniper = new Sniper(getName());;
+                    arrayList.add(sniper);
+                    break;
+                case 2:
+                    Monk monk = new Monk(getName());
+                    arrayList.add(monk);
+                    break;
+                case 3:
+                    Mag mag = new Mag(getName());
+                    arrayList.add(mag);
+                    break;
+                case 4:
+                    Spearman spearman = new Spearman(getName());
+                    arrayList.add(spearman);
+                    break;
+                case 5:
+                    Outlaw outlaw = new Outlaw(getName());
+                    arrayList.add(outlaw);
+                    break;
+                case 6:
+                    Farmer farmer = new Farmer(getName());
+                    arrayList.add(farmer);
+                    break;
             }
         }
         for (int i = 0; i <10; i++) {
